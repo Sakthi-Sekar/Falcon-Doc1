@@ -13,8 +13,10 @@ html{
     /*color:rgb(219, 213, 213);*/
     
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     text-rendering: optimizeLegibility;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0px 20px;
 }
 
 /*-----REUSABLE COMPONENTS-----*/
@@ -115,8 +117,6 @@ header{
     list-style: none;
     margin-top: 35px;
     word-spacing: 1px;
-    content: Food Delivery;
-    
 }
 .main-nav li{
     display: inline-block;
@@ -144,7 +144,7 @@ li{
     float: left;
     display: block;
     }
-    
+
     .row img{
        position: relative;
        float: right;
@@ -235,13 +235,17 @@ text-align: left;
   text-align: justify; 
   position: absolute;
   margin-left: 20%;
-  
+
 }
 .tabcontent p{
-  -webkit-font-smoothing: antialiased;
-
+  color: #000000;
+  font: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 0px 20px;
 }
 
+
+  
 /*--BOLD TEXT--*/
 
 .bold b{
@@ -251,7 +255,7 @@ text-align: left;
 /*---HEADER STICKY EFFECT---*/
 .header {
   padding: 10px 16px;
-background-color: darkgray;
+  background-color: darkgray;
   color: #f1f1f1;
 }
 

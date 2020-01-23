@@ -19,7 +19,7 @@
         <div class="header" id="myHeader">
             <nav class="logo">
                 <img src="resources/images/cropped-logo2.png" alt="ATMECS">
-                <div class="row" >
+                <div class="row">
                     <ul class="main-nav">
                         <li class="bold"><a href="#"><b>About Us</b></a></li>
                         <li class="bold"><a href="#"><b>Contact</b></a></li>
@@ -32,28 +32,30 @@
 
         </nav>
         </div>
-        &nbsp;
-        <div class="content">
-            <div class="tab">
+    </header>
+    &nbsp;
+    <div class="content">
+        <div class="tab">
+            <!-- <a href="resources/content/falconui.html" target="_framename">UI Framework</a> -->
 
-                <button class="tablinks" onclick="openTab(event, 'framework')" id="defaultOpen">
-                    UI Framework</button>
-                <button class="tablinks" onclick="openTab(event, 'requirement')">Environment Requirements</button>
-                <button class="tablinks" onclick="openTab(event, 'setup')">SetUp Falcon UI Project</button>
-                <button class="tablinks" onclick="openTab(event, 'project')">Understanding Project Structure</button>
-                <button class="tablinks" onclick="openTab(event, 'configproperty')">Understanding config.
-                    properties</button>
-                <button class="tablinks" onclick="openTab(event, 'script')">Creating and Running Test Scripts</button>
-            </div>
+            <button class="tablinks" onclick="openTab(event, 'framework')" id="defaultOpen">
+                UI Framework</button>
+            <button class="tablinks" onclick="openTab(event, 'requirement')">Environment Requirements</button>
+            <button class="tablinks" onclick="openTab(event, 'setup')">SetUp UI Project</button>
+            <button class="tablinks" onclick="openTab(event, 'project')">Understanding Project Structure</button>
+            <button class="tablinks" onclick="openTab(event, 'configproperty')">Understanding config.
+                properties</button>
+            <button class="tablinks" onclick="openTab(event, 'script')">Creating and Running Test Scripts</button>
+        </div>
 
-            <div id="framework" class="tabcontent">
-                <h3>Falcon-UI Framework</h3>&nbsp;
-                <hr>&nbsp;&nbsp;
-                <link href="resources/content/falconui.html" rel="import"/>
+        <div id="framework" class="tabcontent">
+            <h3>UI Framework</h3>&nbsp;
+            <hr>&nbsp;&nbsp;
+            <link href="resources/content/falconui.html" rel="import" />
 
-                
 
-                <p class="bold">
+            <a href="resources/content/falconui.html" target="_self">UI Framework</a>
+            <p class="bold">
 
                 The Falcon UI Automation Framework is a tool for testing web applications.
                 This framework can be used for automating most routine processes in web application, such as:<br><br>
@@ -68,330 +70,325 @@
                 3. Maven - Build Management Tool<br>
                 4. Selenium - Automation Tool.
             </p>
-            </div>
-
-            <div id="requirement" class="tabcontent">
-                <h3>Environment Requirements:</h3>&nbsp;
-                <hr>&nbsp;&nbsp;
-                <p class="bold">
-
-                    <b>a)Configure Java and Maven</b><br><br>
-                    Follow the steps mentioned in the below link:<br>
-                    <a
-                        href="https://www.mkyong.com/maven/how-to-install-maven-in-windows/">install-maven-in-windows</a><br><br>
-
-                    <b>b) Eclipse IDE</b><br><br>
-                    Follow the steps mentioned in the below link:<br>
-                    <a
-                        href="http://www.automationtestinghub.com/eclipse-ide-download-and-install/">eclipse-ide-download-and-install</a><br><br>
-
-                    <b>C)TestNG</b><br><br>
-                    Follow the steps mentioned in the below link:<br>
-                    <a
-                        href="http://toolsqa.com/selenium-webdriver/install-testng/">selenium-webdriver/install-testng</a><br><br>
-                </p>
-            </div>
-
-            <div id="setup" class="tabcontent">
-                <h3>Setup Falcon UI Project</h3>&nbsp;
-                <hr>&nbsp;&nbsp;
-                <p class="bold">
-
-                    <b>Following are the steps to start Falcon-UI project for first time:</b><br><br>
-                    Open Eclipse.<br>
-                    Click on File menu and select New from given list then click on Maven Project.<br><br>
-                    <img src="resources/images/Picture1.png"><br><br>
-
-                    Click Next under Maven Project.<br><br>
-                    <div class="center">
-                        <div class="pagination">
-                            <a class="active" href="documentation.html">Previous</a>
-                            <a  href="#">Next</a>
-                        </div>
-                    </div><br><br>
-                    <img src="resources/images/Picture2.png"><br><br>
-                    Click Configure.<br><br>
-                    <img src="resources/images/Picture3.png"><br><br>
-                    Click on Add Remote Catalog.<br><br>
-                    <img src="resources/images/Picture4.png"><br><br>
-                    Enter below details under <b>Remote Archetype Catalog</b> window and click Ok.<br>
-                    <b>A)Catalog File :</b><br>
-                    http://10.10.10.150:8081/nexus/service/local/repositories/falcon/content/archetype-catalog.xml
-                    <b>B)Description :</b><br> It can be any name to identify the Catalog say Falcon-Catalog.<br><br>
-                    <img src="resources/images/Picture5.png"><br><br>
-                    After Adding Remote Catalog It will show as <b>Remote: NameWhichYouGave</b> on Archetypes
-                    Window<br>
-                    Then click <b>Apply and Close</b> to save changes(after saving changes it will show all archetypes
-                    of
-                    falcon).<br><br>
-                    <img src="resources/images/Picture6.png"><br><br>
-                    <b>UnCheck</b> the option called <b>“Show the last version of Archetype only ”</b>(it will show you
-                    all
-                    old and new archetypes of falcon).<br><br>
-                    <img src="resources/images/Picture7.png"><br><br>
-                    Select <b>Falcon-UI Archetype</b> (with any version whatever we want eg . 0.1.0, 0.2.0 etc )as
-                    Archetype ID
-                    and then Click <b>Next.</b><br><br>
-                    <img src="resources/images/Picture8.png"><br><br>
-                    Enter <b>Group Id</b> and <b>Artifact Id,</b> <b>package</b> and Click <b>Finish.</b><br><br>
-                    <img src="resources/images/Picture9.png"><br><br>
-                    Once project gets created You will found <b>project structure</b> as following<br><br>
-                    <img src="resources/images/Picture10.png"><br><br>
-
-
-
-                </p>
-            </div>
-            <div id="project" class="tabcontent">
-                <h3>Understanding Project Structure:</h3>&nbsp;
-                <hr>&nbsp;&nbsp;
-                <p class="bold"><b>In this, we will try to explore the project folder structure.</b><br><br>
-
-                    1.src/main/java - Application/Library sources<br>
-                    2.src/main/resources - Application/Library resources<br>
-                    3.lib - Browser Executables<br>
-                    4.pom.xml<br>
-                    5.testng.xml<br><br>
-
-                    <b>1.src/main/java - Application/Library sources:</b><br><br>
-                    a)This source folder contains packages like runner, testsuite and testscript.<br>
-                    b)The main package name follows as <b>${Group Id}.${Artifact Id}.</b><br>
-                    c)Earlier, we have created <b>Artifact Id</b> as <b>'falconUI'</b> and <b>Group Id</b> as
-                    <b>'com.qa.automation'.</b><br>
-                    d)So Now, the package name will be <b>com.qa.automation.falconUI.</b><br>
-
-                    e)For any application, if you want to add source code folder like utils, helper etc., you can very
-                    well
-                    create
-                    <b>'utils/helper' folder under 'src/main/java/${packageName}' and keep all your domain
-                        utils/helper</b>
-                    under
-                    it.<br><br>
-
-                    &nbsp;<b> 1.1.${packageName}/runner/</b><br><br>
-                    This folder contains <b>‘TestNGRunner.java’</b> file which has the purpose to set up <b>listeners,
-                        suites to run</b>
-                    to <b>testng.xml</b> and <b>upload TestNG results</b> (if configured, we will discuss this more
-                    detailed
-                    in <a href="Understanding
-                config.properties">Understanding config.properties</a>).<br><br>
-                    <u><b>NOTE: Just keep this file as it is unless you don’t have any specific
-                            requirements.</b></u><br><br>
-                    &nbsp;<b>1.2.${packageName}/testscript/</b><br>
-                    This folder contains your actual test scripts to your application.<br><br>
-                    &nbsp;<b>1.3.${packageName}/testsuite/</b><br>
-                    This folder contains Base Test Suite file for your test scripts.<br><br>
-                    <b>2.src/man/resources – Application/Library resources</b><br>
-                    This resources folder contains domain specific resources and test data files.<br><br>
-                    &nbsp;<b>2.1.suitefile/</b><br>This folder contains your application specific test suite files
-                    where
-                    you will mention test classes or packages.<br>
-                    Multiple suite files can be added to src/main/resources/suitefile/ directory.<br>
-                    Path of the suite files should be added in testng.xml.<br><br>
-                    <img src="resources/images/Picture11.png" height="500" width="500"><br><br>
-                    &nbsp;<b>2.2.config.properties</b><br>
-                    This is the main entry for this project and its purpose is to set up the test environment, browser
-                    details and other configurations like bug creation, capturing screenshot and uploading testNG
-                    results.
-                    We will discuss this file detailed in <a href="Understanding config.properties">Understanding
-                        config.properties</a><br><br>
-                    <img src="resources/images/Picture12.png" height="500" width="500"><br><br>
-                    &nbsp;<b>2.3.jira.properties</b><br>
-                    This is the file where we mention jira credentials for creation of a bug if there is any error or
-                    failure.<br><br>
-                    <img src="resources/images/Picture13.png" height="500" width="500"><br><br>
-                    <b>3.lib/</b><br>
-                    This is the folder which contains all the driver executable like
-                    <b>chromedriver.exe,IEDriverServer.exe</b>
-                    etc. This two drivers is provided by default. You can replace it with updated drivers and you can
-                    add
-                    gecko driver and MicrosoftEdge driver to lib folder.<br><br>
-                    <img src="resources/images/Picture14.png"><br><br>
-                    <b>4.pom.xml</b><br>
-                    This is the main file where the Maven project info is stored and configured to run the test scripts,
-                    manage all the falcon and other dependencies.<br><br>
-                    <img src="resources/images/Picture15.png" height="500" width="500"><br><br>
-                    <b>Note :</b> If you select archetype of version 0.2.0 then you need to do changes in pom.xml
-                    file.You
-                    need to change following tabs with given values.<br>
-                    1.<falcon.ui.version><b>0.2.0</b></falcon.ui.version><br>
-                    2.<release.repo.url>http://10.10.10.150:8081/nexus/content/repositories/falcon</release.repo.url>
-                    <br>
-                    Updated pom.xml will look like following:<br><br>
-                    <img src="resources/images/Picture16.png" height="500" width="500"><br><br>
-                    <b>5.testng.xml</b><br>
-                    This is the master *.xml file where you will mention all the suite files as below:<br><br>
-                    <img src="resources/images/Picture17.png" height="500" width="500"><br><br>
-                </p>
-            </div>
-            <div id="configproperty" class="tabcontent">
-                <h3>Understanding config. properties:</h3>&nbsp;
-                <hr>&nbsp;&nbsp;
-                <p class="bold">
-
-                    This is the main file which set up the complete test project. Here we will discuss all the main
-                    configurations one by one.<br><br>
-
-                    <b>1.SuiteFileName</b> – This is the property where we store the master *.xml file.
-                    In our case, it is testng.xml<br><br>
-
-                    <b>2.Testreport.uploadurl</b>– This is the property where we store the report dashboard report
-                    upload
-                    URL. In
-                    our case, it is <a
-                        href="http://10.10.10.150:8083/testreport/upload">http://10.10.10.150:8083/testreport/upload</a><br><br>
-
-                    <b>3.Onfailureimage.uploadurl</b> - This is the property where we store the report dashboard image
-                    upload URL.
-                    In our case, it is
-                    <a href="http://10.10.10.150:8084/image/upload">http://10.10.10.150:8084/image/upload</a><br><br>
-
-                    <b>4.Instances</b> – This is the property where we store the number of parallel instances to run. It
-                    will
-                    create numbers of threads to execute script parallel.<br><br>
-
-                    <b>5.ClientName</b> – This is the property where we store the Client Name to identify the Report
-                    Dashboard.<br><br>
-
-                    <b>6.ModuleName</b> – This is the property where we store the list of suite files, comma separated,
-                    to
-                    execute.
-                    Module name is the name of the suite file which are present in src/main/resources/suitefile/ without
-                    extension. To add multiple modules(suites) provide multiple ModuleName values separated by comma
-                    (,)<br><br>
-                    For Example:<br><br>
-                    ModuleName=sample1,sample2,sampe3<br><br>
-
-                    <b>7.BrowserCaps</b> – This is the property where we store the test browser details according to
-                    instances.<br><br>
-                    <b>Note:</b> To add multiple browsers provide multiple BrowserCaps value separated by comma
-                    (,).<br><br>
-                    Supported OS: Win, Mac, Linux<br>
-                    Supported Browsers: firefox (version<=46), chrome, ie, safari <br><br>For
-                        Example:<br><br><b>WIN_7_chrome_66 (if instances
-                            as 1)</b><br> <b>WIN_7_chrome_66, WIN_7_firefox_61 (if instances
-                            as2)</b><br><br><b>8.Environment</b> – This is the property
-                        where we store test environment details like<br> a.local (for local machine run),<br> b.grid
-                        (for
-                        Selenium
-                        Grid Machine run)<br> c.browserstack (for Browser Stack run)<br><br> <b>9.GridIP</b> – This is
-                        the
-                        property where we
-                        store grid machine details. This property will be picked only when the environment is
-                        grid.<br><br>
-                        <b>10.
-                            automatic.bug.creation</b> – This is the property where we store a Boolean value to create a
-                        bug
-                        in
-                        JIRA. If True, it will create a JIRA bug according to given properties in jira.properties If
-                        False,
-                        it won’t create any bug in JIRA even if there is an error or failure.<br><br> <b>11.
-                            capture.screenshot</b>– This
-                        is the property where we store a Boolean value to capture a screenshot on test failure. If True,
-                        it
-                        will capture a screenshot on test failure If False, it won’t capture any screenshot even if
-                        there is
-                        an error or failure.<br><br> <b>12. UploadResults</b>– This is the property where we store a
-                        Boolean value to
-                        upload the results on completion of execution. If True, it will upload the testNG results along
-                        with
-                        screenshot images (if capture.screenshot is true) and error messages if any. If False, it won’t
-                        upload the testNG results upon completion of test execution.</p>
-            </div>
-            <div id="script" class="tabcontent">
-                <h3>Creating and Running Test Scripts:</h3>&nbsp;
-                <p>In this we will look how to create Test Scripts and execute them as per test requirement.<br><br>
-                    1.Creation of Test Scripts:<br><br>
-                    Create Your Test Scripts under testscript folder as shown in below.<br>
-                    Create a simple class in testscript folder.<br><br>
-                    <img src="resources/images/Picture18.png" height="500" width="500"><br><br>
-                    2.Adding Test Scripts to Suite File:<br>
-                    Create a Suite File under <b>src/main/resources/suitefile</b> and Add the Created Test Script to it
-                    as
-                    below:<br>
-                    In sample.xml we need to add class which we want to execute.<br><br>
-                    <img src="resources/images/Picture19.png" height="500" width="500"><br><br>
-                    3.Adding Suite Files to testng.xml:<br>
-                    Add created suite files to <b>testng.xml</b> as below:<br>
-                    We can add more than one sample.xml files and this suites adds to testNG.xml file<br><br>
-                    <img src="resources/images/Picture20.png" height="500" width="500"><br><br>
-                    4.Setting up Test Environment in config.properties:<br>
-                    Configure Test Environment under config.properties as below:<br><br>
-
-                    Important Configurations:<br>
-                    <b>a.testreport.uploadurl</b>– Report Dashboard Upload URL (if uploadResults=true)
-                    <b>b.onfailureimage.uploadurl</b>– Report Dashboard Image Upload URL (if uploadResults=true &
-                    capture.screenshot=true)<br><br>
-                    <img src="resources/images/Picture21.png" height="500" width="500"><br><br>
-                    <b>c.instances</b>– Number of Parallel Test Runs (1 for Single Run, 2 for Parallel Run)<br>
-                    <b>d.ClientName</b>– Client Name to identify Reports under Report Dashboard<br>
-                    <b>e.ModuleName</b>– This is the suite files separated by comma (,) without any extension. For
-                    Example:
-                    <b>demoSuite</b><br><br>
-                    <img src="resources/images/Picture22.png" height="500" width="500"><br><br>
-                    <b>f.BrowserCaps</b>– Browser and OS Details, Syntax will be
-                    OSName_OSVersion_BrowserName_BrowserVersion
-                    We can ‘ve multiple BrowserCaps for Parallel run when instances are more than 1.<br>
-                    For Example:<br>
-                    BrowserCaps=WIN_10_chrome_66 (when instances as 1).<br>
-                    BrowserCaps=WIN_10_chrome_66,WIN_10_ie_11 (when instances as 2).<br><br>
-                    <img src="resources/images/Picture23.png" height="500" width="500"><br><br>
-                    <b>g.Environment/gridIp</b> – This will work as below:<br>
-                    Local – To Run in the Local Machine.<br>
-                    Grid – To Run in the Grid Machine (gridIP should be mentioned).<br>
-                    Browserstack – To Run in the Cloud Machine (Browser Stack).<br><br>
-                    <img src="resources/images/Picture24.png" height="500" width="500"><br><br>
-                    <b>h.automatic.bug.creation</b> – To Create JIRA Issues if there is an error.<br>
-                    <b>i.capture.screenshot</b> – To Capture Screenshot if there is an error.<br>
-                    <b>j.uploadResults</b> – To Upload Results to Report Dashboard.<br><br>
-                    <img src="resources/images/Picture25.png" height="500" width="500"><br><br>
-                    <b>5.Running Test Scripts:</b><br>
-                    To Run the Project, Right Click on the <b>Project</b> and Click on <b>Run as</b> and then <b>Maven
-                        Test</b> as shown in
-                    below:<br><br>
-                    <img src="resources/images/Picture26.png" height="500" width="500">
-
-
-
-                </p>
-            </div>
-            <div>
-            </div>
-            <script>
-                function openTab(evt, tabName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) { tabcontent[i].style.display = "none"; }
-                    tablinks = document.getElementsByClassName("tablinks"); for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(tabName).style.display = "block"; evt.currentTarget.className
-                        += " active";
-                } // Get the element with id="defaultOpen" and click on it
-                document.getElementById("defaultOpen").click(); </script>
-
-            <script>
-                window.onscroll = function () { myFunction() };
-
-                var header = document.getElementById("myHeader");
-                var sticky = header.offsetTop;
-
-                function myFunction() {
-                    if (window.pageYOffset > sticky) {
-                        header.classList.add("sticky");
-                    } else {
-                        header.classList.remove("sticky");
-                    }
-                }
-            </script>
-            <script>
-                var extern = document.getElementsByTagName("link")[0].import;
-                var absatz = extern.getElementsByTagName("p")[0];
-                window.addEventListener("load", function () {
-                    document.getElementsByTagName("html")[0].replaceChild(extern.getElementsByTagName("body")[0], document.getElementsByTagName("body")[0]);
-                }, false);
-            </script>
         </div>
+
+        <div id="requirement" class="tabcontent">
+            <h3>Environment Requirements:</h3>&nbsp;
+            <hr>&nbsp;&nbsp;
+            <p class="bold">
+
+                <b>&bull; Configure Java and Maven</b><br><br>
+                Follow the steps mentioned in the below link:<br>
+                <a
+                    href="https://www.mkyong.com/maven/how-to-install-maven-in-windows/">install-maven-in-windows</a><br><br>
+
+                <b>&bull; Eclipse IDE</b><br><br>
+                Follow the steps mentioned in the below link:<br>
+                <a
+                    href="http://www.automationtestinghub.com/eclipse-ide-download-and-install/">eclipse-ide-download-and-install</a><br><br>
+
+                <b>&bull; TestNG</b><br><br>
+                Follow the steps mentioned in the below link:<br>
+                <a
+                    href="http://toolsqa.com/selenium-webdriver/install-testng/">selenium-webdriver/install-testng</a><br><br>
+            </p>
+        </div>
+
+        <div id="setup" class="tabcontent">
+            <h3>Setup UI Project</h3>&nbsp;
+            <hr>&nbsp;&nbsp;
+            <p class="bold">
+
+                <b>Following are the steps to start Falcon-UI project for first time:</b><br><br>
+                &bull; Open Eclipse.<br>
+                &bull; Click on File menu and select New from given list then click on Maven Project.<br><br>
+                <img src="resources/images/Picture1.png"><br><br>
+
+                &bull; Click Next under Maven Project.<br><br>
+                <div class="center">
+                    <div class="pagination">
+                        <a class="active" href="documentation.html">Previous</a>
+                        <a href="#">Next</a>
+                    </div>
+                </div><br><br>
+                <img src="resources/images/Picture2.png"><br><br>
+                &bull; Click Configure.<br><br>
+                <img src="resources/images/Picture3.png"><br><br>
+                &bull; Click on Add Remote Catalog.<br><br>
+                <img src="resources/images/Picture4.png"><br><br>
+                &bull; Enter below details under <b>Remote Archetype Catalog</b> window and click Ok.<br>
+                <b>A)Catalog File :</b><br>
+                http://10.10.10.150:8081/nexus/service/local/repositories/falcon/content/archetype-catalog.xml
+                <b>B)Description :</b><br> It can be any name to identify the Catalog say Falcon-Catalog.<br><br>
+                <img src="resources/images/Picture5.png"><br><br>
+                &bull; After Adding Remote Catalog It will show as <b>Remote: NameWhichYouGave</b> on Archetypes
+                Window<br>
+                &bull; Then click <b>Apply and Close</b> to save changes(after saving changes it will show all
+                archetypes
+                of
+                falcon).<br><br>
+                <img src="resources/images/Picture6.png"><br><br>
+                &bull; <b>UnCheck</b> the option called <b>“Show the last version of Archetype only ”</b>(it will show
+                you
+                all old and new archetypes of falcon).<br><br>
+                <img src="resources/images/Picture7.png"><br><br>
+                &bull; Select <b>Falcon-UI Archetype</b> (with any version whatever we want eg . 0.1.0, 0.2.0 etc )as
+                Archetype ID
+                and then Click <b>Next.</b><br><br>
+                <img src="resources/images/Picture8.png"><br><br>
+                &bull; Enter <b>Group Id</b> and <b>Artifact Id,</b> <b>package</b> and Click <b>Finish.</b><br><br>
+                <img src="resources/images/Picture9.png"><br><br>
+                &bull; Once project gets created You will found <b>project structure</b> as following<br><br>
+                <img src="resources/images/Picture10.png"><br><br>
+
+
+
+            </p>
+        </div>
+        <div id="project" class="tabcontent">
+            <h3>Understanding Project Structure:</h3>&nbsp;
+            <hr>&nbsp;&nbsp;
+            <p class="bold"><b>In this, we will try to explore the project folder structure.</b><br><br>
+
+                1.src/main/java - Application/Library sources<br>
+                2.src/main/resources - Application/Library resources<br>
+                3.lib - Browser Executables<br>
+                4.pom.xml<br>
+                5.testng.xml<br><br>
+
+                <b>1.src/main/java - Application/Library sources:</b><br><br>
+                &bull; This source folder contains packages like runner, testsuite and testscript.<br>
+                &bull; The main package name follows as <b>${Group Id}.${Artifact Id}.</b><br>
+                &bull; Earlier, we have created <b>Artifact Id</b> as <b>'falconUI'</b> and <b>Group Id</b> as
+                <b>'com.qa.automation'.</b><br>
+                &bull; So Now, the package name will be <b>com.qa.automation.falconUI.</b><br>
+
+                &bull; For any application, if you want to add source code folder like utils, helper etc., you can very
+                well
+                create
+                <b>'utils/helper' folder under 'src/main/java/${packageName}' and keep all your domain
+                    utils/helper</b>
+                under
+                it.<br><br>
+
+                <b> 1.1.${packageName}/runner/</b><br><br>
+                This folder contains <b>‘TestNGRunner.java’</b> file which has the purpose to set up <b>listeners,
+                    suites to run</b>
+                to <b>testng.xml</b> and <b>upload TestNG results</b> (if configured, we will discuss this more
+                detailed
+                in <a href="Understanding
+                config.properties">Understanding config.properties</a>).<br><br>
+                <u><b>NOTE: Just keep this file as it is unless you don’t have any specific
+                        requirements.</b></u><br><br>
+                &nbsp;<b>1.2.${packageName}/testscript/</b><br>
+                This folder contains your actual test scripts to your application.<br><br>
+                &nbsp;<b>1.3.${packageName}/testsuite/</b><br>
+                This folder contains Base Test Suite file for your test scripts.<br><br>
+                <b>2.src/man/resources – Application/Library resources</b><br>
+                This resources folder contains domain specific resources and test data files.<br><br>
+                &nbsp;<b>2.1.suitefile/</b><br>This folder contains your application specific test suite files
+                where
+                you will mention test classes or packages.<br>
+                &bull; Multiple suite files can be added to src/main/resources/suitefile/ directory.<br>
+                &bull; Path of the suite files should be added in testng.xml.<br><br>
+                <img src="resources/images/Picture11.png" height="500" width="500"><br><br>
+                &nbsp;<b>2.2.config.properties</b><br>
+                This is the main entry for this project and its purpose is to set up the test environment, browser
+                details and other configurations like bug creation, capturing screenshot and uploading testNG
+                results.
+                We will discuss this file detailed in <a href="Understanding config.properties">Understanding
+                    config.properties</a><br><br>
+                <img src="resources/images/Picture12.png" height="500" width="500"><br><br>
+                &nbsp;<b>2.3.jira.properties</b><br>
+                This is the file where we mention jira credentials for creation of a bug if there is any error or
+                failure.<br><br>
+                <img src="resources/images/Picture13.png" height="500" width="500"><br><br>
+                <b>3.lib/</b><br>
+                This is the folder which contains all the driver executable like
+                <b>chromedriver.exe,IEDriverServer.exe</b>
+                etc. This two drivers is provided by default. You can replace it with updated drivers and you can
+                add
+                gecko driver and MicrosoftEdge driver to lib folder.<br><br>
+                <img src="resources/images/Picture14.png"><br><br>
+                <b>4.pom.xml</b><br>
+                This is the main file where the Maven project info is stored and configured to run the test scripts,
+                manage all the falcon and other dependencies.<br><br>
+                <img src="resources/images/Picture15.png" height="500" width="500"><br><br>
+                <b>Note :</b> If you select archetype of version 0.2.0 then you need to do changes in pom.xml
+                file.You
+                need to change following tabs with given values.<br>
+                1.<falcon.ui.version><b>0.2.0</b></falcon.ui.version><br>
+                2.<release.repo.url>http://10.10.10.150:8081/nexus/content/repositories/falcon</release.repo.url>
+                <br>
+                Updated pom.xml will look like following:<br><br>
+                <img src="resources/images/Picture16.png" height="500" width="500"><br><br>
+                <b>5.testng.xml</b><br>
+                This is the master *.xml file where you will mention all the suite files as below:<br><br>
+                <img src="resources/images/Picture17.png" height="500" width="500"><br><br>
+            </p>
+        </div>
+        <div id="configproperty" class="tabcontent">
+            <h3>Understanding config. properties:</h3>&nbsp;
+            <hr>&nbsp;&nbsp;
+            <p class="bold">
+
+                This is the main file which set up the complete test project. Here we will discuss all the main
+                configurations one by one.<br><br>
+
+                <b>1.SuiteFileName</b> – This is the property where we store the master *.xml file.
+                In our case, it is testng.xml<br><br>
+
+                <b>2.Testreport.uploadurl</b>– This is the property where we store the report dashboard report
+                upload
+                URL. In
+                our case, it is <a
+                    href="http://10.10.10.150:8083/testreport/upload">http://10.10.10.150:8083/testreport/upload</a><br><br>
+
+                <b>3.Onfailureimage.uploadurl</b> - This is the property where we store the report dashboard image
+                upload URL.
+                In our case, it is
+                <a href="http://10.10.10.150:8084/image/upload">http://10.10.10.150:8084/image/upload</a><br><br>
+
+                <b>4.Instances</b> – This is the property where we store the number of parallel instances to run. It
+                will
+                create numbers of threads to execute script parallel.<br><br>
+
+                <b>5.ClientName</b> – This is the property where we store the Client Name to identify the Report
+                Dashboard.<br><br>
+
+                <b>6.ModuleName</b> – This is the property where we store the list of suite files, comma separated,
+                to
+                execute.
+                Module name is the name of the suite file which are present in src/main/resources/suitefile/ without
+                extension. To add multiple modules(suites) provide multiple ModuleName values separated by comma
+                (,)<br><br>
+                For Example:<br><br>
+                ModuleName=sample1,sample2,sampe3<br><br>
+
+                <b>7.BrowserCaps</b> – This is the property where we store the test browser details according to
+                instances.<br><br>
+                <b>Note:</b> To add multiple browsers provide multiple BrowserCaps value separated by comma
+                (,).<br><br>
+                Supported OS: Win, Mac, Linux<br>
+                Supported Browsers: firefox (version<=46), chrome, ie, safari <br><br>For
+                    Example:<br><br><b>WIN_7_chrome_66 (if instances
+                        as 1)</b><br> <b>WIN_7_chrome_66, WIN_7_firefox_61 (if instances
+                        as2)</b><br><br><b>8.Environment</b> – This is the property
+                    where we store test environment details like<br> a.local (for local machine run),<br> b.grid
+                    (for
+                    Selenium
+                    Grid Machine run)<br> c.browserstack (for Browser Stack run)<br><br> <b>9.GridIP</b> – This is
+                    the
+                    property where we
+                    store grid machine details. This property will be picked only when the environment is
+                    grid.<br><br>
+                    <b>10.
+                        automatic.bug.creation</b> – This is the property where we store a Boolean value to create a
+                    bug
+                    in
+                    JIRA. If True, it will create a JIRA bug according to given properties in jira.properties If
+                    False,
+                    it won’t create any bug in JIRA even if there is an error or failure.<br><br> <b>11.
+                        capture.screenshot</b>– This
+                    is the property where we store a Boolean value to capture a screenshot on test failure. If True,
+                    it
+                    will capture a screenshot on test failure If False, it won’t capture any screenshot even if
+                    there is
+                    an error or failure.<br><br> <b>12. UploadResults</b>– This is the property where we store a
+                    Boolean value to
+                    upload the results on completion of execution. If True, it will upload the testNG results along
+                    with
+                    screenshot images (if capture.screenshot is true) and error messages if any. If False, it won’t
+                    upload the testNG results upon completion of test execution.</p>
+        </div>
+        <div id="script" class="tabcontent">
+            <h3>Creating and Running Test Scripts:</h3>&nbsp;
+            <p>In this we will look how to create Test Scripts and execute them as per test requirement.<br><br>
+                1.Creation of Test Scripts:<br><br>
+                Create Your Test Scripts under testscript folder as shown in below.<br>
+                Create a simple class in testscript folder.<br><br>
+                <img src="resources/images/Picture18.png" height="500" width="500"><br><br>
+                2.Adding Test Scripts to Suite File:<br>
+                Create a Suite File under <b>src/main/resources/suitefile</b> and Add the Created Test Script to it
+                as
+                below:<br>
+                In sample.xml we need to add class which we want to execute.<br><br>
+                <img src="resources/images/Picture19.png" height="500" width="500"><br><br>
+                3.Adding Suite Files to testng.xml:<br>
+                Add created suite files to <b>testng.xml</b> as below:<br>
+                We can add more than one sample.xml files and this suites adds to testNG.xml file<br><br>
+                <img src="resources/images/Picture20.png" height="500" width="500"><br><br>
+                4.Setting up Test Environment in config.properties:<br>
+                Configure Test Environment under config.properties as below:<br><br>
+
+                Important Configurations:<br>
+                <b>a.testreport.uploadurl</b>– Report Dashboard Upload URL (if uploadResults=true)
+                <b>b.onfailureimage.uploadurl</b>– Report Dashboard Image Upload URL (if uploadResults=true &
+                capture.screenshot=true)<br><br>
+                <img src="resources/images/Picture21.png" height="500" width="500"><br><br>
+                <b>c.instances</b>– Number of Parallel Test Runs (1 for Single Run, 2 for Parallel Run)<br>
+                <b>d.ClientName</b>– Client Name to identify Reports under Report Dashboard<br>
+                <b>e.ModuleName</b>– This is the suite files separated by comma (,) without any extension. For
+                Example:
+                <b>demoSuite</b><br><br>
+                <img src="resources/images/Picture22.png" height="500" width="500"><br><br>
+                <b>f.BrowserCaps</b>– Browser and OS Details, Syntax will be
+                OSName_OSVersion_BrowserName_BrowserVersion
+                We can ‘ve multiple BrowserCaps for Parallel run when instances are more than 1.<br>
+                For Example:<br>
+                BrowserCaps=WIN_10_chrome_66 (when instances as 1).<br>
+                BrowserCaps=WIN_10_chrome_66,WIN_10_ie_11 (when instances as 2).<br><br>
+                <img src="resources/images/Picture23.png" height="500" width="500"><br><br>
+                <b>g.Environment/gridIp</b> – This will work as below:<br>
+                 Local – To Run in the Local Machine.<br>
+                 Grid – To Run in the Grid Machine (gridIP should be mentioned).<br>
+                 Browserstack – To Run in the Cloud Machine (Browser Stack).<br><br>
+                <img src="resources/images/Picture24.png" height="500" width="500"><br><br>
+                <b>h.automatic.bug.creation</b> – To Create JIRA Issues if there is an error.<br>
+                <b>i.capture.screenshot</b> – To Capture Screenshot if there is an error.<br>
+                <b>j.uploadResults</b> – To Upload Results to Report Dashboard.<br><br>
+                <img src="resources/images/Picture25.png" height="500" width="500"><br><br>
+                <b>5.Running Test Scripts:</b><br>
+                To Run the Project, Right Click on the <b>Project</b> and Click on <b>Run as</b> and then <b>Maven
+                    Test</b> as shown in
+                below:<br><br>
+                <img src="resources/images/Picture26.png" height="500" width="500">
+
+
+
+            </p>
+        </div>
+        <div>
+        </div>
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) { tabcontent[i].style.display = "none"; }
+                tablinks = document.getElementsByClassName("tablinks"); for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block"; evt.currentTarget.className
+                    += " active";
+            } // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click(); </script>
+
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+
+    </div>
 
 </body>
 
