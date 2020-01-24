@@ -233,7 +233,7 @@ text-align: left;
   color: #ccc;
   margin-top: 1.5%;
   text-align: justify; 
-  position: absolute;
+  position: fixed;
   margin-left: 20%;
 
 }
@@ -328,4 +328,8 @@ text-align: left;
  
   color: white;
   font-size:24px;
+}
+h4::before{
+  content: url(resources/content/falconui.html);
+
 }
