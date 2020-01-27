@@ -2,12 +2,15 @@
 
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x icon" href="resources/images/atmecs.jpg">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/index1.css">
-
+    <script type="text/javascript" src="resources/js files/index1.js"></script>
+    <title>Falcon-Documentation</title>
 </head>
 
 <body>
+
     <div id="header">
 
         <div class="fixed-header">
@@ -39,30 +42,31 @@
     <div id="main">
 
         <div class="container">
-            <div id="framework" class="tabcontent">&nbsp; &nbsp; &nbsp;
+
+            <div id="framework" class="tabcontent">&emsp;
                 <h3>UI Framework</h3>
-                <hr>&nbsp; &nbsp; &nbsp;
+                <hr>&emsp;
 
                 <p>The <b>Falcon UI Automation Framework is a tool</b> for testing web applications.<br>
                     <p>This framework can be used for automating most routine processes in web application, such as:</p>
-                    &bull;&nbsp;&nbsp;Cross browser Testing, Execute on Local machine, remote machine(grid), Cloud
+                    &bull;&ensp;Cross browser Testing, Execute on Local machine, remote machine(grid), Cloud
                     (BrowserStack).<br>
 
-                    &bull;&nbsp;&nbsp;Verification of different data types(Primitive and Non-Primitive).<br>
-                    &bull;&nbsp;&nbsp;Utilities to read and write with different file formats(.xls, .xlsx, .txt, .csv,
+                    &bull;&ensp;Verification of different data types(Primitive and Non-Primitive).<br>
+                    &bull;&ensp;Utilities to read and write with different file formats(.xls, .xlsx, .txt, .csv,
                     .xml).<br><br>
                     <b>Falcon-UI Automation framework uses the following tool and frameworks:</b>
 
                     <p>
-                        &bull;&nbsp;&nbsp;Java - Programming language<br>
-                        &bull;&nbsp;&nbsp; TestNG - Unit Framework<br>
-                        &bull;&nbsp;&nbsp; Maven - Build Management Tool<br>
-                        &bull;&nbsp;&nbsp; Selenium - Automation Tool<br>
+                        &bull;&ensp;Java - Programming language<br>
+                        &bull;&ensp; TestNG - Unit Framework<br>
+                        &bull;&ensp; Maven - Build Management Tool<br>
+                        &bull;&ensp; Selenium - Automation Tool<br>
                     </p>
 
             </div>
 
-            <div id="requirement" class="tabcontent">&nbsp; &nbsp; &nbsp;
+            <div id="requirement" class="tabcontent">&emsp;
                 <h3>Environment Requirements</h3>
                 <hr>
                 <p><b>a)Configure Java and Maven</b></p>
@@ -88,7 +92,9 @@
                     <b>Following are the steps to start Falcon-UI project for first time:</b><br><br>
                     &bull; Open Eclipse.<br>
                     &bull; Click on File menu and select New from given list then click on Maven Project.<br><br>
-                    <img src="resources/images/Picture1.png" class="image-zoom"><br><br>
+
+                    <img src="resources/images/Picture1.png" alt="Picture 1" class="hover-shadow zoomA" /><br><br>
+
 
                     &bull; Click Next under Maven Project.<br><br>
                     <div class="center">
@@ -97,37 +103,37 @@
                             <a href="#">Next</a>
                         </div>
                     </div><br><br>
-                    <img src="resources/images/Picture2.png" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture2.png" alt="Picture 2" class="hover-shadow zoomA" /><br><br>
                     &bull; Click Configure.<br><br>
-                    <img src="resources/images/Picture3.png" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture3.png" alt="Picture 3" class="hover-shadow zoomA" /><br><br>
                     &bull; Click on Add Remote Catalog.<br><br>
-                    <img src="resources/images/Picture4.png" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture4.png" alt="Picture 4" class="hover-shadow zoomA" /><br><br>
                     &bull; Enter below details under <b>Remote Archetype Catalog</b> window and click Ok.<br>
                     <b>A)Catalog File :</b><br>
-                    http://10.10.10.150:8081/nexus/service/local/repositories/falcon/content/archetype-catalog.xml
+                    http://10.10.10.150:8081/nexus/service/local/repositories/falcon/content/archetype-catalog.xml<br>
                     <b>B)Description :</b><br> It can be any name to identify the Catalog say Falcon-Catalog.<br><br>
-                    <img src="resources/images/Picture5.png" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture5.png" alt="Picture 5" class="hover-shadow zoomA" /><br><br>
                     &bull; After Adding Remote Catalog It will show as <b>Remote: NameWhichYouGave</b> on Archetypes
                     Window<br>
                     &bull; Then click <b>Apply and Close</b> to save changes(after saving changes it will show all
                     archetypes
                     of
                     falcon).<br><br>
-                    <img src="resources/images/Picture6.png" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture6.png" alt="Picture 6" class="hover-shadow zoomA" /><br><br>
                     &bull; <b>UnCheck</b> the option called <b>“Show the last version of Archetype only ”</b>(it will
                     show
                     you
                     all old and new archetypes of falcon).<br><br>
-                    <img src="resources/images/Picture7.png" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture7.png" alt="Picture 7" class="hover-shadow zoomA" /><br><br>
                     &bull; Select <b>Falcon-UI Archetype</b> (with any version whatever we want eg . 0.1.0, 0.2.0 etc
                     )as
                     Archetype ID
                     and then Click <b>Next.</b><br><br>
-                    <img src="resources/images/Picture8.png" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture8.png" alt="Picture 8" class="hover-shadow zoomA" /><br><br>
                     &bull; Enter <b>Group Id</b> and <b>Artifact Id,</b> <b>package</b> and Click <b>Finish.</b><br><br>
-                    <img src="resources/images/Picture9.png" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture9.png" alt="Picture 9" class="hover-shadow zoomA" /><br><br>
                     &bull; Once project gets created You will found <b>project structure</b> as following<br><br>
-                    <img src="resources/images/Picture10.png" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture10.png" alt="Picture 10" class="hover-shadow zoomA" /><br><br>
 
                 </p>
             </div>
@@ -179,29 +185,33 @@
                     you will mention test classes or packages.<br>
                     &bull; Multiple suite files can be added to src/main/resources/suitefile/ directory.<br>
                     &bull; Path of the suite files should be added in testng.xml.<br><br>
-                    <img src="resources/images/Picture11.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture11.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     &nbsp;<b>2.2.config.properties</b><br>
                     This is the main entry for this project and its purpose is to set up the test environment, browser
                     details and other configurations like bug creation, capturing screenshot and uploading testNG
                     results.
                     We will discuss this file detailed in <a href="Understanding config.properties">Understanding
                         config.properties</a><br><br>
-                    <img src="resources/images/Picture12.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture12.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     &nbsp;<b>2.3.jira.properties</b><br>
                     This is the file where we mention jira credentials for creation of a bug if there is any error or
                     failure.<br><br>
-                    <img src="resources/images/Picture13.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture13.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     <b>3.lib/</b><br>
                     This is the folder which contains all the driver executable like
                     <b>chromedriver.exe,IEDriverServer.exe</b>
                     etc. This two drivers is provided by default. You can replace it with updated drivers and you can
                     add
                     gecko driver and MicrosoftEdge driver to lib folder.<br><br>
-                    <img src="resources/images/Picture14.png" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture14.png" class="hover-shadow zoomA" /><br><br>
                     <b>4.pom.xml</b><br>
                     This is the main file where the Maven project info is stored and configured to run the test scripts,
                     manage all the falcon and other dependencies.<br><br>
-                    <img src="resources/images/Picture15.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture15.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     <b>Note :</b> If you select archetype of version 0.2.0 then you need to do changes in pom.xml
                     file.You
                     need to change following tabs with given values.<br>
@@ -209,16 +219,18 @@
                     2.<release.repo.url>http://10.10.10.150:8081/nexus/content/repositories/falcon</release.repo.url>
                     <br>
                     Updated pom.xml will look like following:<br><br>
-                    <img src="resources/images/Picture16.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture16.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     <b>5.testng.xml</b><br>
                     This is the master *.xml file where you will mention all the suite files as below:<br><br>
-                    <img src="resources/images/Picture17.png" height="500" width="500"><br><br>
+                    <img src="resources/images/Picture17.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                 </p>
             </div>
 
             <div id="configproperty" class="tabcontent">
                 <h3>Understanding config. properties:</h3>&nbsp;
-                <hr>&nbsp;&nbsp;
+                <hr>&ensp;
                 <p class="bold">
 
                     This is the main file which set up the complete test project. Here we will discuss all the main
@@ -297,17 +309,20 @@
                     1.Creation of Test Scripts:<br><br>
                     Create Your Test Scripts under testscript folder as shown in below.<br>
                     Create a simple class in testscript folder.<br><br>
-                    <img src="resources/images/Picture18.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture18.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     2.Adding Test Scripts to Suite File:<br>
                     Create a Suite File under <b>src/main/resources/suitefile</b> and Add the Created Test Script to it
                     as
                     below:<br>
                     In sample.xml we need to add class which we want to execute.<br><br>
-                    <img src="resources/images/Picture19.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture19.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     3.Adding Suite Files to testng.xml:<br>
                     Add created suite files to <b>testng.xml</b> as below:<br>
                     We can add more than one sample.xml files and this suites adds to testNG.xml file<br><br>
-                    <img src="resources/images/Picture20.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture20.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     4.Setting up Test Environment in config.properties:<br>
                     Configure Test Environment under config.properties as below:<br><br>
 
@@ -315,42 +330,50 @@
                     <b>a.testreport.uploadurl</b>– Report Dashboard Upload URL (if uploadResults=true)
                     <b>b.onfailureimage.uploadurl</b>– Report Dashboard Image Upload URL (if uploadResults=true &
                     capture.screenshot=true)<br><br>
-                    <img src="resources/images/Picture21.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture21.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     <b>c.instances</b>– Number of Parallel Test Runs (1 for Single Run, 2 for Parallel Run)<br>
                     <b>d.ClientName</b>– Client Name to identify Reports under Report Dashboard<br>
                     <b>e.ModuleName</b>– This is the suite files separated by comma (,) without any extension. For
                     Example:
                     <b>demoSuite</b><br><br>
-                    <img src="resources/images/Picture22.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture22.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     <b>f.BrowserCaps</b>– Browser and OS Details, Syntax will be
                     OSName_OSVersion_BrowserName_BrowserVersion
                     We can ‘ve multiple BrowserCaps for Parallel run when instances are more than 1.<br>
                     For Example:<br>
                     BrowserCaps=WIN_10_chrome_66 (when instances as 1).<br>
                     BrowserCaps=WIN_10_chrome_66,WIN_10_ie_11 (when instances as 2).<br><br>
-                    <img src="resources/images/Picture23.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture23.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     <b>g.Environment/gridIp</b> – This will work as below:<br>
                      Local – To Run in the Local Machine.<br>
                      Grid – To Run in the Grid Machine (gridIP should be mentioned).<br>
                      Browserstack – To Run in the Cloud Machine (Browser Stack).<br><br>
-                    <img src="resources/images/Picture24.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture24.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     <b>h.automatic.bug.creation</b> – To Create JIRA Issues if there is an error.<br>
                     <b>i.capture.screenshot</b> – To Capture Screenshot if there is an error.<br>
                     <b>j.uploadResults</b> – To Upload Results to Report Dashboard.<br><br>
-                    <img src="resources/images/Picture25.png" height="500" width="500" class="image-zoom"><br><br>
+                    <img src="resources/images/Picture25.png" height="500" width="500"
+                        class="hover-shadow zoomA" /><br><br>
                     <b>5.Running Test Scripts:</b><br>
                     To Run the Project, Right Click on the <b>Project</b> and Click on <b>Run as</b> and then <b>Maven
                         Test</b> as shown in
                     below:<br><br>
-                    <img src="resources/images/Picture26.png" height="500" width="500" class="image-zoom">
+                    <img src="resources/images/Picture26.png" height="500" width="500" class="hover-shadow zoomA" />
 
 
 
                 </p>
+
             </div>
 
         </div>
+
     </div>
+
     <div id="sidebar-right">
     </div>
     <div id="footer">
@@ -363,6 +386,8 @@
             </div>
         </div>
     </div>
+
+
 
     <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
@@ -381,23 +406,8 @@
         document.getElementById("defaultOpen").click(); </script>
     </script>
 
-    <script>
-        function zoomin() {
-            var myImg = document.getElementsByClassName("image-zoom");
-            var currWidth = myImg.clientWidth;
-            if (currWidth == 2500) return false;
-            else {
-                myImg.style.width = (currWidth + 100) + "px";
-            }
-        }
-        function zoomout() {
-            var myImg = document.getElementsByClassName("image-zoom");
-            var currWidth = myImg.clientWidth;
-            if (currWidth == 100) return false;
-            else {
-                myImg.style.width = (currWidth - 100) + "px";
-            }
-        }</script>
+
+
 </body>
 
 </html>
