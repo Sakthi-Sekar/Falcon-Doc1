@@ -7,7 +7,7 @@
     width:200px;
     float:left;
     left:100%;
-    margin-top:-4%;
+    margin-top:-9%;
     margin-right: 250px;
     
 } 
@@ -32,16 +32,17 @@
         #sidebar-left{
             float:left;
             width:22%;
-            background-color:white;
-            margin-top: 1.5%;
+            background-color:white; 
             margin-left: 7%;
+            
+       
           
         }
 
         #main{
             float:left;
-            width:60%;
-            background-color: lightgray;
+            width:70%;
+            background-color: white;
             margin-top: 6.5%;    
         }
 
@@ -75,7 +76,8 @@
 
 .container{
     width: auto;
-    margin: 0 auto; /* Center the DIV horizontally */    
+    margin: 0 auto; /* Center the DIV horizontally */   
+    
 }
 nav a{
     color: black;
@@ -110,11 +112,11 @@ font-size:24px;
 
 /* Style the tab */
 .tab {
-background-color: #f1f1f1;
+background-color: white;
 font-size: medium;
 margin-top: 5%;
 position: fixed;
-
+padding-top: -10px;
 }
 
 /* Style the buttons inside the tab */
@@ -123,6 +125,7 @@ display: block;
 background-color: inherit;
 color: black;
 padding: 22px 16px;
+
 
 border: none;
 outline: none;
@@ -363,3 +366,68 @@ margin-right: 10%;
     display: block;
   }
   
+  /*--TOOLTIP--*/
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color:white;
+    text-align: center;
+    border-radius: 1px;
+    padding:  10px 10px;
+  
+    /* Position of the tooltip */
+    position:inherit;
+    margin-left: inherit;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition: 0.3s;
+  }
+
+ .tooltip{
+     position: relative;
+     padding-left:10px;
+ }
+  
+
+ /* Show the snackbar when clicking on a button (class added with JavaScript) */
+.tooltiptext .show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  /*SCROLL*/
+  .scroll {
+    
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+    
+} 
